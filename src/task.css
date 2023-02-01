@@ -1,0 +1,16 @@
+.card {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.bg-blue {
+    background-color: blue;
+    color: white;
+}
+
+.bg-green {
+    background-color: green;
+    color: white;
+}

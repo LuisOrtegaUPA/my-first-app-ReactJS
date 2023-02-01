@@ -1,13 +1,22 @@
-export function Greeting() {
-    return <h1>Hello World!</h1>
+export function Greeting({title}) {
+    console.log(title);
+    return <h1>Hello {title} </h1>;
 }
 
-export function UserCard() {
-    const data = {
-        name: 'Luis Ortega',
-        age: 21,
-        status: 'married'
-    }
-
-    return <p>{ JSON.stringify(data) }</p>
+export function UserCard({name, amount, married, points, address, greet}) {
+    console.log(greet);
+  return (
+    <h1>
+      Nombre: {name} <br />
+      Money: ${amount} <br />
+      Married: {married ? "Yes" : "No"} <br />
+      Points: {points} <br />
+      <ul>
+        Address:
+        <li>Street: {address.street}</li>
+        <li>City: {address.city}</li>
+        <li>cp: {address.cp}</li>
+      </ul>
+    </h1>
+  );
 }
