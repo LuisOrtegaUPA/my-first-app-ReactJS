@@ -1,6 +1,6 @@
 import {Component} from 'react';
 
-class Saludar extends Component {
+class Saludar extends Component { // Componente con Class
     render() {
         return <h1>Hola Mundo</h1>;
     }
