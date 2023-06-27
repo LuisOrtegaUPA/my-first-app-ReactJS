@@ -8,7 +8,7 @@ const Post = () => {
             .catch(error => console.error(error))
     }}>
         Post
-        <DiDatabase />
+        <DiDatabase /> 
     </button>;    
 }
 

@@ -3,20 +3,24 @@ export function Greeting({title}) {
     return <h1>Hello {title} </h1>;
 }
 
-export function UserCard({name, amount, married, points, address, greet}) {
-    console.log(greet);
+export function UserCard({name, age, married, points, address, greet}) {
   return (
-    <h1>
-      Nombre: {name} <br />
-      Money: ${amount} <br />
-      Married: {married ? "Yes" : "No"} <br />
-      Points: {points} <br />
+    <div>
+      <h1>Name: {name}</h1>
+      <ol>
+        <li>Age: {age} years old</li>
+        <li>Married: {married ? "Casado" : "Soltero"}</li>
+        <li>Points: {points}</li>
+      </ol>
+    
+    <h1>Address:</h1>  
       <ul>
-        Address:
         <li>Street: {address.street}</li>
+        <li>CP: {address.cp}</li>
         <li>City: {address.city}</li>
-        <li>cp: {address.cp}</li>
       </ul>
-    </h1>
+    </div>
   );
 }
+
+export default Greeting;
